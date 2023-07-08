@@ -1,0 +1,51 @@
+<main>
+	<%- include('../partials/adminSidebar') %>
+	
+	<div id="main-wrapper">
+		
+		<div class="bg-light shadow-sm p-3">
+			<span class="me-3" id="sidebar-toggler-btn"><i class="fas fa-bars"></i></span>
+			<h5 class="m-0 color-primary d-inline-block">Admin Dashboard</h5>
+		</div>
+		
+		<table class="table table-bordered mt-4">
+			<thead>
+				<tr>
+					<th scope="col">Category</th>
+					<th scope="col">Count</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="">
+					<td>Total Admins</td>
+					<td><%= numAdmins %></td>
+				</tr>
+				<tr>
+					<td>Active Donors</td>
+					<td><%= numDonors %></td>
+				</tr>
+				<tr>
+					<td>Assigned Agents</td>
+					<td><%= numAgents %></td>
+				</tr>
+				<tr>
+					<td>Pending Requests</td>
+					<td><%= numPendingDonations %></td>
+				</tr>
+				<tr>
+					<td>Approved Donations</td>
+					<td><%= numAcceptedDonations %></td>
+				</tr>
+				<tr>
+					<td>Rejected Donations</td>
+					<td><%= numAssignedDonations %></td>
+				</tr>
+				<tr>
+					<td>Collected Donations</td>
+					<td><%= numCollectedDonations %></td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+</main>

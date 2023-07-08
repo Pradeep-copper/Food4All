@@ -1,0 +1,39 @@
+<main>
+	<%- include('../partials/donorSidebar') %>
+	
+	<div id="main-wrapper">
+		
+		<div class="bg-white shadow-sm p-3">
+			<span class="me-3" id="sidebar-toggler-btn"><i class="fas fa-bars"></i></span>
+			<h5 class="m-0 color-theme d-inline-block">Dashboard</h5>
+		</div>
+		
+		<table class="table table-bordered mt-4">
+			<thead>
+				<tr>
+					<th scope="col">Category</th>
+					<th scope="col">Count</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Donations by You</td>
+					<td><%= numCollectedDonations %></td>
+				</tr>
+				<tr>
+					<td>Donation Requests Not Processed Yet</td>
+					<td><%= numPendingDonations %></td>
+				</tr>
+				<tr>
+					<td>Donations Accepted and to be Assigned to Agent</td>
+					<td><%= numAcceptedDonations %></td>
+				</tr>
+				<tr>
+					<td>Donations Not Collected Yet</td>
+					<td><%= numAssignedDonations %></td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+</main>

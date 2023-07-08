@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root
+{
+	--theme-color: #3f51b5;
+	
+}
+.donation-logo{
+	width:75px;
+    height:52px;
+	 
+	
+}
+
+body
+{
+	height: 100vh;
+	background-color: #f8f8f8;
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+
+
+header
+{
+	 background-color: var(--theme-color) ; 
+	height: 58px;
+	font-weight: 500;
+}
+header .nav-link
+{
+	color:#ffffff !important;
+}
+header #navbarSupportedContent
+{
+	background-color: var(--theme-color);
+}
+header .nav-link:hover
+{
+	transition: 0.3s;
+	color: #ddd1d1 !important;
+}
+header .user-icon
+{
+	padding: 0.4rem;
+    color: white !important;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 40px;
+    text-align: center;
+}
+header .navbar-toggler:focus
+{
+	box-shadow: none;
+}
+
+
+.color-theme
+{
+	color: var(--theme-color);
+}
+
+.btn
+{
+	padding: 6px 15px;
+	font-size: 18px;
+	color: white;
+	background-color:var(--theme-color);
+
+	border-radius: 0px;
+}
+.btn-danger
+{
+	background-color: rgb(223, 28, 28);
+}
+.btn:hover
+{
+	box-shadow: 3px 4px 6px 0px grey;
+	color: white;
+}
+
+
+.form-date-input
+{
+	display: block;
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+	border: 1px solid #ced4da;
+}
+.form-date-input:focus
+{
+	box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+	outline: none;
+}
+
+.text-pending
+{ color: rgb(243, 172, 18) !important; }
+.text-rejected
+{ color: red !important; }
+.text-accepted
+{ color: green !important; }
+.text-assigned
+{ color: blue !important; }
+.text-collected
+{ color: #3f51b5 !important; }
+
+
+.alerts-wrapper
+{
+	position: absolute;
+	right: 0px;
+	width: fit-content;
+	font-weight: bold;
+	animation: moveLeft 0.1s linear;
+	z-index: 100;
+}
+
+.alerts-wrapper .alert-danger
+{
+	color: white;
+	background-color: #e22a2a;
+}
+.alerts-wrapper .alert-success
+{
+	color: white;
+	background-color: #1fa64e;
+}
+
+
+@keyframes moveLeft {
+	from { right: -100px; }
+	to { right: 0px; }
+}
+
+.bg-img{
+	background-image:url("https://www.pexels.com/photo/volunteers-giving-out-meals-wearing-face-masks-6995298/");
+	height: 50vh;
+	background-size:cover; 
+}
+
+ .bg-img{
+	border-radius: 16px;
+}
+.bg-card{
+	border-radius: 16px;
+}
+
+ .bg-text{
+	color: #5a7184;
+	font-size:18px ;
+	font-family:"Roboto";
+	font-weight: 700;
+} 
+.quote{
+	font-size:20px ;
+	font-family:"Caveat";
+	color: #5a7184;
+     
+} 
+.quote2{
+	color: #5a7184;
+	font-family:"Bee Serif";
+	font-size:20px ;
+	font-weight: bold;
+	margin-top:32px;
+} 
+.quote3{
+	color: #1467ab;
+	font-family:"Bee Serif";
+	font-size:28px ;
+	font-weight: bold;
+	margin-top:25px;
+} 
+
+
+.ml-auto{
+	margin-left:auto !important;
+}
+
+
+.table{
+	background-color:rgb(228, 238, 235);
+}
+
+/* Custom table styles */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1rem;
+  }
+  
+  th,
+  td {
+	padding: 0.75rem;
+	text-align: center;
+	border: 1px solid #ddd;
+  }
+  
+  thead {
+	background-color: #f8f9fa;
+  }
+  
+  tbody {
+	background-color: #fff;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  
+  /* Custom styles for the admin dashboard */
+  #main-wrapper {
+	padding: 2rem;
+  }
+  
+  .bg-light {
+	background-color: #f8f9fa;
+	color: #000;
+  }
+  
+  .color-primary {
+	color: #007bff;
+  }
+  
+  .Btn {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 45px;
+	height: 45px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	transition-duration: .3s;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+	background-color: rgb(255, 65, 65);
+  }
+  
+  /* plus sign */
+  .sign {
+	width: 100%;
+	transition-duration: .3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .sign svg {
+	width: 17px;
+  }
+  
+  .sign svg path {
+	fill: white;
+  }
+  /* text */
+  .text {
+	position: absolute;
+	right: 0%;
+	width: 0%;
+	opacity: 0;
+	color: white;
+	font-size: 1.2em;
+	font-weight: 600;
+	transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+	width: 125px;
+	border-radius: 40px;
+	transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+	width: 30%;
+	transition-duration: .3s;
+	padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+	opacity: 1;
+	width: 70%;
+	transition-duration: .3s;
+	padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+	transform: translate(2px ,2px);
+  }
+  
+
+
+  /* ///login//// */
+  .login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #ffffff;
+  }
+  
+  .login-form {
+	width: 400px;
+	padding: 40px;
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: 0 2px 4px #ffffff;
+  }
+  
+  .login-title {
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	color: #333333;
+  }
+  
+  .form-group {
+	margin-bottom: 20px;
+  }
+  
+  .form-label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 500;
+	color: #555555;
+  }
+  
+  .form-control {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	background-color: #d2cece;
+  }
+  
+  .btn {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color:rgb(36, 36, 148);
+	transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+	background-color: #ff1560;
+  }
+  
+  .signup-link {
+	margin-top: 10px;
+	text-align: center;
+	color: blue;
+  }
+  
+  .signup-link span {
+	margin-right: 5px;
+  }
+  
+  .signup-link a {
+	color: #ff4081;
+	text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+	color: #ff1560;
+  }
+  
